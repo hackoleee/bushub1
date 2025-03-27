@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bus Tracker - User Interface</h1>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </header>
+
+        <section class="search-section">
+            <h2>Find Your Bus</h2>
+            <label for="stop">Enter Stop:</label>
+            <input type="text" id="stop" placeholder="Enter stop name">
+            
+            <label for="time">Enter Time:</label>
+            <input type="time" id="time">
+
+            <button onclick="findBus()">Search</button>
+        </section>
+
+        <section class="bus-info">
+            <h2>Bus Details</h2>
+            <div id="busDetails"></div>
+        </section>
+
+        <section class="map-section">
+            <h2>Route Map</h2>
+            <button onclick="viewMap()">View Map</button>
+            <div id="map"></div>
+        </section>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>

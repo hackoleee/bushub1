@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="app-title">Bus</h2>
+        <p class="subtitle">Login to continue</p>
+
+        <div class="toggle-buttons">
+            <button id="userBtn" class="active">User</button>
+            <button id="adminBtn">Admin</button>
+        </div>
+
+        <!-- User Login Form -->
+        <form class="login-form" id="userLogin">
+            <input type="email" id="userEmail" placeholder="User Email" required>
+            <input type="password" id="userPassword" placeholder="User Password" required>
+            <button type="submit"><a href="/user.html">Login</a> </button>
+        </form>
+
+        <!-- Admin Login Form -->
+        <form class="login-form hidden" id="adminLogin">
+            <input type="email" id="adminEmail" placeholder="Admin Email" required>
+            <input type="password" id="adminPassword" placeholder="Admin Password" required>
+            <button type="submit"><a href="/admin.html">Login</a></button>
+        </form>
+
+        <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+        <p class="register">New User? <a href="#">Register Here</a></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

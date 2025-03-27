@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #2C2C2C;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(255, 107, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* App Title */
+.app-title {
+    color: #FF6B00;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #F5F5F5;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.toggle-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+#userBtn {
+    background: #FF6B00;
+}
+
+#adminBtn {
+    background: #2C2C2C;
+    border: 2px solid #FF6B00;
+    color: #FF6B00;
+}
+
+#userBtn.active, #adminBtn.active {
+    background: #FF9500;
+    color: white;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #FF6B00;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #121212;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #FF9500;
+}
+
+/* Login Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #FF6B00;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background: #FF9500;
+}
+
+/* Links */
+.forgot-password, .register {
+    margin-top: 12px;
+    font-size: 14px;
+    color: white;
+}
+
+.forgot-password a, .register a {
+    color: #FF6B00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.forgot-password a:hover, .register a:hover {
+    color: #FF9500;
+}
+
+/* Hide Admin/User Form */
+.hidden {
+    display: none;
+}
